@@ -42,7 +42,7 @@ Deployed Application (optional): [Flixster Deployed Site](https://lrmantovani10.
 
 ### Walkthrough Video
 
-Open walkthrough.mov file in repo
+Open Walkthrough.mp4 file in repo
 
 ### Reflection
 
