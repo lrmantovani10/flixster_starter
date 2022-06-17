@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="Width=device-width">
+        <title>
+            Flixster
+        </title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="shortcut icon" href="logo.jpeg"/>
+    </head>
+        
+    <body>
+        <script src="script.js "></script>
+        <h1 id = "close-search-btn" onclick=goToMain()>Flixster</h1>
+        </div>
+        <form onsubmit = searchResult(event)>
+            <a id = "search-input"> Search: </a>
+            <input id = "searchBar" type="text" placeholder="Movie name...">
+        </form>
+        <h2> On Display</h2>
+        <div id = "movies-grid"></div>
+        <div id = "modalContent">
+            <div class = "verticalFlex">
+                <span id = "close">&times;</span>
+                <img id = "movie-card" class = "modalMedia" src = "" alt = "movie image popup that opens movie's homepage when clicked">
+                <iframe id = "movieTrailer" class = "modalMedia" src = "" title = "YouTube video player" alt = "" frameborder = "0" allow= "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a id = "subTitle" href = "" target = "_blank"></a>
+                <p id = "extraInfo"></p>
+                <p id = "summary"></p>
+            </div>
+        </div>
+        <button id = "load-more-movies-btn">Load more</button>
+    </body>
+
+
+</html>

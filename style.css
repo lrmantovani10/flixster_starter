@@ -1,1 +1,221 @@
+body{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: repeating-linear-gradient(black, rgb(76, 71, 71), black);
+}
 
+h1{
+    font-size: 300%;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    font-size: x-large;
+    color: white;
+}
+
+#movies-grid{
+    display: grid;
+    z-index: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+}
+
+.newMovie{
+    padding-bottom: 15%;
+    transition: 0.5s;
+}
+
+.movie-poster{
+    width: 70%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.newMovie:hover{
+   transform: translateY(-25px);
+}
+
+.movie-title{
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+
+.movie-votes{
+    color: white;
+    text-align: center;
+    font-size: small;
+}
+
+#modalContent{
+    display: none;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    place-items: center;
+    align-items: center;
+    overflow: auto;
+    gap: 0px;
+}
+
+#modalContent{  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@keyframes zoom {
+    from {transform:scale(0.3)} 
+    to {transform:scale(1)}
+}
+  
+
+.verticalFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.modalMedia{
+    margin-bottom: 5%;
+    height: 500px;
+}
+
+#movie-card{
+    display:block;
+    width: 400px;
+}
+
+#movie-card:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@keyframes fadeOut {
+    from {opacity:100%} 
+    to {opacity:0%}
+}
+
+#movieTrailer{
+    display: none;
+    width: 600px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    from {opacity:0%} 
+    to {opacity:100%}
+}
+
+#subTitle{
+    font-weight: bold;
+    font-size: x-large;
+    padding: 0%;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+#subTitle:hover{
+    opacity:0.6;
+}
+
+#extrainfo{
+    color: grey;
+    font-size: medium;
+}
+
+#summary{
+    text-align: left;
+    font-size: medium;
+    color: black;
+}
+
+#close{
+    font-size: xx-large;
+    position: relative;
+    left: -45%;
+    cursor: pointer;
+}
+
+#load-more-movies-btn{
+    color: white;
+    background-color: black;
+    width: 20%;
+    height: 30%;
+    font-size: 130%;
+    margin-bottom: 2%;
+}
+
+#search-input{
+    color: white;
+    position: relative;
+    left: -30%;
+}
+
+#searchBar{
+    margin-top: 4%;
+    width: 20%;
+    position: relative;
+    left: -30%;
+    font-size: medium;
+}
+
+#close-search-btn{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    #movies-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #movieTrailer{
+        width: 400px;
+    }
+
+    .newMovie{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #movies-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #movieTrailer{
+        width: 400px;
+    }
+
+    .newMovie{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #movies-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #movieTrailer{
+        width: 200px;
+    }
+
+    .newMovie{
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+}
