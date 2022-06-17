@@ -42,7 +42,7 @@ Deployed Application (optional): [Flixster Deployed Site](https://lrmantovani10.
 
 ### Walkthrough Video
 
-![Walkthrough](https://user-images.githubusercontent.com/11562529/174408645-d59d0333-b574-408f-8d3d-03f46880d591.gif)
+![Walkthrough](https://user-images.githubusercontent.com/11562529/174409023-2a071aaa-abf5-4337-a72f-91500ffba33e.gif)
 
 ### Reflection
 
