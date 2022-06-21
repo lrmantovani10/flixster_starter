@@ -1,4 +1,4 @@
-const apiKey = "4b04f34e01e13309a6742e874874ef9"
+const apiKey = ""
 const basePath = 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/'
 const videoBasePath = "https://www.youtube.com/embed/"
 let pageNumber = 1
